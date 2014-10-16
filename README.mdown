@@ -14,4 +14,4 @@ We did a few things to make it faster. First we added pagination. We are only sh
 
 Here is the [proof.](http://loadimpact.com/test/view/1821438)
 
-![loadimpact](https://www.dropbox.com/s/w4yz1ikec4f6uu5/Screenshot%202014-10-15%2020.16.11.png)
+![loadimpact](http://www.dropbox.com/s/w4yz1ikec4f6uu5/Screenshot%202014-10-15%2020.16.11.png?dl=0)
