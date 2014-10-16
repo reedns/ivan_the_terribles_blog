@@ -9,5 +9,6 @@
         <%= render 'post_nav', post: post %>
       <hr />
     </div>
+    <%= render post.comments.first(10) %>
   </div>
-      <%= render post.comments %>
+
