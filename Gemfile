@@ -15,7 +15,6 @@ gem 'activerecord-deprecated_finders'
 gem 'foundation-rails'
 gem 'goldiloader'
 
-
 group :development, :test do
   gem 'hirb'
   gem 'pry-rails'
