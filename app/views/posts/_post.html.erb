@@ -1,6 +1,35 @@
-<section class="post">
-  <h2>Post <%= "#{post.id}: #{post.title}" %></h2>
-  <div class="post"><%= post.body %></div>
-  <%= render 'post_nav', post: post %>
-  <%= render post.comments %>
-</section>
+  <div class="row">
+    <div class="large-9 columns" role="content">
+      <article>
+       <h2>Post <%= post.title %></h2>
+        <div class="row">
+          <div class="large-6 columns">
+            <p><%= post.body %></p>
+          </div>
+        <%= render 'post_nav', post: post %>
+      <hr />
+    </div>
+  </div>
+      <%= render post.comments %>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+  <aside class="large-3 columns">
+    <h5>Categories</h5>
+    <ul class="side-nav">
+      <li><a href="#">News</a></li>
+      <li><a href="#">Code</a></li>
+      <li><a href="#">Design</a></li>
+      <li><a href="#">Fun</a></li>
+      <li><a href="#">Weasels</a></li>
+    </ul>
+
+    <div class="panel">
+      <h5>Featured</h5>
+      <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow.</p>
+      <a href="#">Read More &rarr;</a>
+    </div>
+  </aside>
+    <!-- End Sidebar -->
+  </div>
+  <!-- End Main Content and Sidebar -->

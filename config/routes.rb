@@ -1,10 +1,7 @@
-IvanTheTerriblesBlog::Application.routes.draw do
+Rails.application.routes.draw do
+  root 'posts#index'
 
   resources :posts
   resources :comments
   resources :replies
-
-  root :to => 'posts#index'
-
 end
-
