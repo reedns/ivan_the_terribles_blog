@@ -16,6 +16,8 @@
   </p>
 <% end %>
 </section>
-<%= content_tag :div, "data-#{params[:status]}" => @posts.size do %>
-  Number of <%= params[:status] %> results shown: <%= @posts.size if @posts %>
+<%= content_tag :div, params[:status] == "published" ? "data-published" : "data-unpublished
+" => @posts.size do %>
+  Number of <%= params[:status] == "published" ? "data-published" : "data-unpublished
+  " %> results shown: <%= @posts.size if @posts %>
 <% end -%>

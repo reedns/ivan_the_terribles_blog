@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.where(published: params[:status] == 'published')
+    @posts = Post.where(:status == 'published')
       .search(params[:search])
       .page(params[:page])
       .per(15)
